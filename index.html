@@ -1,0 +1,104 @@
+<!--
+Jamie BLy
+TheFrozenNorth
+Nov 2021
+-->
+<html>
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <style type text='css'>
+
+            .sideNav{
+                height: 100%;
+                width: 0%;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color:black;
+                overflow-x: hidden;
+                padding-top:60px;
+                transition: 0.5s;
+            }
+
+            .sideNav a{
+                padding:8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color:whitesmoke;
+                display: block;
+                transition: 0.3s;
+            }
+
+            .sideNav a:Hover{
+                color:thistle;
+                
+            }
+
+            .sideNav .closebtn{
+                position: absolute;
+                top: 0%;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+
+            #main{
+                transition: margin-left 0.5s;
+                padding:16px;
+            }
+
+           
+
+            @media screen and (max-height: 450px){
+                .sideNav{padding-top:15px;}
+                .sidenav a {font-size:18px;}
+            }
+
+        </style>
+    </head>
+
+    <body>
+    <div id='main'>
+    
+        <h2>YES</h2>
+
+        <span onclick='openNav()'>&#9776; open</span>
+        
+    </div>
+
+    <div id='mySideNav' class='sideNav'>
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href='#' id='snHome'>Home</a>
+        <a href='#' id='snLCS'>LCS</a>
+        <a href='#' id='snLEC'>LEC</a>
+        <a href='#' id='snIntNews'>International News</a>
+        <a href='#' id='snSQ'>Solo Que</a>
+        <a href='#' id='snPredictions'>Predictions</a>
+        <a href='#' id='snOpinions'>Opinions</a>
+
+    </div>
+
+
+    <script>
+
+        function openNav() {
+            document.getElementById('mySideNav').style.width = '15%';
+            document.getElementById('main').style.marginLeft = '15%';
+            document.body.style.backgroundColor = 'rgba(0,0,0,0.4)';
+        }
+
+
+        function closeNav() {
+            document.getElementById('mySideNav').style.width = '0';
+            document.getElementById('main').style.marginLeft = '0';
+            document.body.style.backgroundColor = 'White';
+        }
+
+
+    </script>
+</body>
+</html>
+
+
