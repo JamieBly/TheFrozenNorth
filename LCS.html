@@ -1,8 +1,3 @@
-<!--
-Jamie BLy
-TheFrozenNorth
-Nov 2021
--->
 <html>
     <head>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -48,16 +43,22 @@ Nov 2021
 
             #header{
                 transition: margin-left 0.5s;
-                padding-left: 16px;
-                padding-top: 0px;
+                
+                
     
             }
+
+            #imgHomeLogo {
+                width: 10%;
+                height: 10%;
+                position: absolute;
+                left: 45%;
+            }          
 
             #menuButton{
                 font-family: fantasy;
                 font-size: 30pt;
                 color: whitesmoke;
-                
             }
 
             #menuButton:hover{
@@ -67,11 +68,28 @@ Nov 2021
 
             body{
 
-                position: relative;
                 background-image: linear-gradient(rgba(11, 22, 184, 0.5),rgba(255, 255, 255, 0.5)), url("images/homePageBackground.jpg");
+
                 background-repeat: no-repeat;
                 background-size: cover;
                
+            }
+
+            /* Section is for the Scroll Bar */
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: #f1f1f1
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: #888;
+            }
+
+            ::-wbkit-scrollbar-thumb:hover{
+                background: #555;
             }
 
            
@@ -88,16 +106,11 @@ Nov 2021
 
     <body>
     <div id='header'>
-    
-        <!-- <h2>TheFrozenNorth</h2> -->
 
-        <span id='menuButton' onclick='openNav()'>&#9776; Brave The Cold</span>
-        
-    </div>
-
-    <div class="homeLogo">
-
-        <img id="imgHomeLogo" src="images/logos/whiteLogo.png" style=' position: absolute; width: 80%; height: 90%; left: 10%; top: 5%'>
+        <span id='menuButton' onclick='openNav()'>&#9776; The LCS</span>
+        <a href="index.html" id="homeLogo">
+            <img src="images/logos/whiteLogo.png" id="imgHomeLogo">
+        </a>
         
     </div>
 
@@ -129,8 +142,11 @@ Nov 2021
             document.body.style.backgroundColor = 'White';
         }
 
+
+
+       
+
+
     </script>
 </body>
 </html>
-
-

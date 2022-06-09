@@ -1,0 +1,25 @@
+<article class="artOne" id="art_1">
+            
+            <h2>Test Article One</h2>
+
+            <article class="insideArt">
+                
+                <p>This is the first test article. Is supposed to lead to my "High Time for Canada" report on Cannabis legalization in Canada
+                </p>
+
+                <button class="readArt" id="btnReadArt_1">Read Article</button>
+
+                <script>
+                    document.getElementById("btnReadArt_1").addEventListener("click", clickRA_1)
+
+                    function clickRA_1() {
+
+                        open("Testing Articles/AthleticCampsResume.pdf")
+
+                    }
+                </script>
+                 
+            </article>
+            
+            
+        </article>
