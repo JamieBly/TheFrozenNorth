@@ -7,18 +7,8 @@
                 <p>This is the first test article. Is supposed to lead to my "High Time for Canada" report on Cannabis legalization in Canada
                 </p>
 
-                <button class="readArt" id="btnReadArt_1">Read Article</button>
+                <a href='ArticlePage.html' class='ArtPage' id='aArt_1' onclick=" global = 'Testing Articles/EsportsResume.pdf#toolbar=0';sv(); window.location.href = 'ArticlePage.html';">Read Article</a>
 
-                <script>
-                    document.getElementById("btnReadArt_1").addEventListener("click", clickRA_1)
-
-                    function clickRA_1() {
-
-                        open("Testing Articles/AthleticCampsResume.pdf")
-
-                    }
-                </script>
-                 
             </article>
             
             

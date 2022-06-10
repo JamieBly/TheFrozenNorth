@@ -3,7 +3,7 @@
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <style type text='css'>
 
-            .sideNav{
+.sideNav{
                 height: 100%;
                 width: 0%;
                 position: fixed;
@@ -67,13 +67,105 @@
 
 
             body{
-                
+
                 background-image: linear-gradient(rgba(11, 22, 184, 0.5),rgba(255, 255, 255, 0.5)), url("images/homePageBackground.jpg");
 
                 background-repeat: no-repeat;
                 background-size: cover;
                
             }
+
+            #articles{
+                left: 5%;
+                top: 15%;
+                /* background-color: thistle; */
+                height: 80%;
+                width: 90%;
+                position: absolute;
+
+                overflow-y: scroll;
+            }
+
+            .artOne {
+                
+                height: 45%;
+                width: 30%;
+
+                margin-top: 2%;
+                margin-left: 2.35%;
+                          
+                background-color: whitesmoke;
+                font: 1rem 'Fira Sans', sans-serif;
+                position: relative;
+                text-align: center;
+                display:inline-block;
+
+                border-radius: 15px;
+                padding: 5s;
+                box-shadow: 0 4px 8px 0 #0D0D0D;
+
+            }
+
+
+            .insideArt {
+
+                height: 70%;
+                width: 90%;
+                top: 20%;
+                left: 5%;
+                border-radius: 15px;
+                background-color: white;
+                position: absolute;
+                box-shadow: 0 2px 4px 0 #0D0D0D;
+
+            }
+
+            .readArt {
+
+                background-color: whitesmoke;
+                top: 85%;
+                left: 41%;
+                position: absolute;
+
+            }
+
+            .artPage {
+
+                top: 85%;
+                left: 41%;
+                position: absolute;
+                background-color: whitesmoke;
+                padding: 5px;
+                box-shadow: 0 1px 2px 0 #0D0D0D;
+
+            }
+
+            .artPage:hover {
+
+                background-color: thistle;
+                box-shadow: 0 2px 4px 0 #0D0D0D;
+
+
+            }
+
+
+            /* Section is for the Scroll Bar */
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: transparent;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: whitesmoke;
+            }
+
+            ::-webkit-scrollbar-thumb:hover{
+                background: thistle;
+            }
+
 
            
 
@@ -110,8 +202,36 @@
 
     </div>
 
+    <div id="articles">
+
+        <!---->
+        <!-- This is where the article codes go -->
+        <!---->
+
+        <article class="artOne" id="art_1">
+            
+            <h2>Test Article One</h2>
+
+            <article class="insideArt">
+                
+                <p>This is the first test article. Is supposed to lead to my "High Time for Canada" report on Cannabis legalization in Canada
+                </p>
+
+                <a href='ArticlePage.html' class='ArtPage' id='aArt_1' onclick=" global = 'Testing Articles/EsportsResume.pdf#toolbar=0';sv(); window.location.href = 'ArticlePage.html';">Read Article</a>
+
+            </article>
+            
+            
+        </article>
+
+        
+
+    </div>
+
     <script>
 
+        var global;
+        
         function openNav() {
             document.getElementById('mySideNav').style.width = '15%';
             document.getElementById('main').style.marginLeft = '15%';
@@ -125,7 +245,9 @@
             document.body.style.backgroundColor = 'White';
         }
 
-
+        function sv() {
+            sessionStorage.setItem("articleName", global);
+        }
 
        
 
