@@ -82,8 +82,19 @@
                 height: 80%;
                 width: 90%;
                 position: absolute;
-
+                
                 overflow-y: scroll;
+                
+            }
+
+            h2 {
+                position: relative;
+                white-space: nowrap;
+                overflow: hidden;
+                /* width: 5%; */
+                width: 90%;
+                left: 5%;
+                text-overflow: ellipsis;
             }
 
             .artOne {
@@ -110,12 +121,14 @@
 
             .insideArt {
 
-                height: 70%;
+                height: 60%;
                 width: 90%;
                 top: 20%;
                 left: 5%;
                 border-radius: 15px;
                 background-color: white;
+                overflow-y: scroll;
+                white-space: normal;
                 position: absolute;
                 box-shadow: 0 2px 4px 0 #0D0D0D;
 
@@ -133,9 +146,10 @@
             .artPage {
 
                 top: 85%;
-                left: 41%;
+                left: 37.5%;
+                width: 25%;
                 position: absolute;
-                background-color: whitesmoke;
+                background-color: white;
                 padding: 5px;
                 box-shadow: 0 1px 2px 0 #0D0D0D;
 
@@ -145,7 +159,6 @@
 
                 background-color: thistle;
                 box-shadow: 0 2px 4px 0 #0D0D0D;
-
 
             }
 
@@ -223,10 +236,9 @@
                     team has one destination in mind. 2022 Worlds.
                 </p>
 
-                <a href='ArticlePage.html' class='ArtPage' id='aArt_1' onclick=" global = 'Articles/LCS Articles/LCS_2022_Summer_Tierlist.pdf#toolbar=0';sv(); window.location.href = 'ArticlePage.html';">Read Article</a>
-
             </article>
             
+            <a href='ArticlePage.html' class='ArtPage' id='aArt_1' onclick=" global = 'Articles/LCS Articles/LCS_2022_Summer_Tierlist.pdf#toolbar=0';sv(); window.location.href = 'ArticlePage.html';">Read Article</a>
             
         </article>
 
