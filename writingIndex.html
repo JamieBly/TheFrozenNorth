@@ -1,3 +1,8 @@
+<!--
+Jamie BLy
+TheFrozenNorth
+Nov 2021
+-->
 <html>
     <head>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -43,54 +48,33 @@
 
             #header{
                 transition: margin-left 0.5s;
-                
-                
+                padding-left: 16px;
+                padding-top: 0px;
+                position: absolute;
     
             }
-
-            #imgHomeLogo {
-                width: 10%;
-                height: 10%;
-                position: absolute;
-                left: 45%;
-            }          
 
             #menuButton{
                 font-family: fantasy;
                 font-size: 30pt;
                 color: whitesmoke;
+                
             }
 
             #menuButton:hover{
                 color: thistle;
             }
 
-            body{
-                
-                background-image: linear-gradient(rgba(11, 22, 184, 0.5),rgba(255, 255, 255, 0.5)), url("images/homePageBackground.jpg");
 
+            body{
+
+                position: relative;
+                background-image: linear-gradient(rgba(11, 22, 184, 0.5),rgba(255, 255, 255, 0.5)), url("images/homePageBackground.jpg");
                 background-repeat: no-repeat;
                 background-size: cover;
-               
+                
             }
 
-
-            /* Section is for the Scroll Bar */
-            ::-webkit-scrollbar {
-                width: 10px;
-            }
-
-            ::-webkit-scrollbar-track {
-                background: transparent;
-            }
-
-            ::-webkit-scrollbar-thumb {
-                background: whitesmoke;
-            }
-
-            ::-webkit-scrollbar-thumb:hover{
-                background: white;
-            }
            
 
             @media screen and (max-height: 450px){
@@ -105,11 +89,16 @@
 
     <body>
     <div id='header'>
+    
+        <!-- <h2>TheFrozenNorth</h2> -->
 
-        <span id='menuButton' onclick='openNav()'>&#9776; Article</span>
-        <a href="index.html" id="homeLogo">
-            <img src="images/logos/whiteLogo.png" id="imgHomeLogo">
-        </a>
+        <span id='menuButton' onclick='openNav()'>&#9776; Writing</span>
+        
+    </div>
+
+    <div class="homeLogo">
+
+        <img id="imgHomeLogo" src="images/logos/whiteLogo.png" style=' position: relative; width: 5%; height: 5%; left: 45%; top: 0%; visibility: hidden;'>
         
     </div>
 
@@ -117,18 +106,12 @@
 
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href='home.html' id='snHome'>Home</a>
-        <a href='LCS.html' id='snLCS'>LCS</a>
+        <!-- <a href='LCS.html' id='snLCS'>LCS</a>
         <a href='LEC.html' id='snLEC'>LEC</a>
         <a href='AroundTheWorld.html' id='snATW'>Around The World</a>
         <a href='SoloQueue.html' id='snSQ'>SoloQueue</a>
         <a href='Predictions.html' id='snPredictions'>Predictions</a>
-        <a href='Coaching.html' id='snCoaching'>Coaching</a>
-
-    </div>
-
-    <div>        
-
-        <iframe  id="iFArt" src="Testing Articles/ProofOfVaccination_BLY- DOUGLAS JAMES.pdf#toolbar=0" width="90%" height="80%" style="position:absolute; top:15%; left:5%;"></iframe>
+        <a href='Coaching.html' id='snCoaching'>Coaching</a> -->
 
     </div>
 
@@ -147,13 +130,8 @@
             document.body.style.backgroundColor = 'White';
         }
 
-        document.getElementById("iFArt").src = sessionStorage.getItem("articleName");
-
-
-
-       
-
-
     </script>
 </body>
 </html>
+
+
