@@ -51,6 +51,9 @@ Nov 2021
                 padding-left: 16px;
                 padding-top: 0px;
                 position: absolute;
+                left: 0%;
+                top: 0%;
+                height: 5%;
     
             }
 
@@ -73,6 +76,110 @@ Nov 2021
                 background-repeat: no-repeat;
                 background-size: cover;
                 
+            }
+
+            #articles{
+                position:fixed;
+                left: 5%;
+                top: 15%;
+                /* background-color: thistle; */
+                height: 80%;
+                width: 90%;
+                
+                overflow-y: scroll;
+                
+            }
+
+            h2 {
+                position: relative;
+                white-space: nowrap;
+                overflow: hidden;
+                /* width: 5%; */
+                width: 90%;
+                left: 5%;
+                text-overflow: ellipsis;
+            }
+
+            .artOne {
+                
+                height: 45%;
+                width: 30%;
+
+                margin-top: 2%;
+                margin-left: 2.35%;
+                          
+                background-color: whitesmoke;
+                font: 1vw 'Fira Sans', sans-serif;
+                position: relative;
+                text-align: center;
+                display:inline-block;
+
+                border-radius: 15px;
+                padding: 5s;
+                box-shadow: 0 4px 8px 0 #0D0D0D;
+                font-size: 1.2vw;
+
+            }
+
+
+            .insideArt {
+
+                height: 60%;
+                width: 90%;
+                top: 20%;
+                left: 5%;
+                border-radius: 15px;
+                background-color: white;
+                overflow-y: scroll;
+                white-space: normal;
+                position: absolute;
+                box-shadow: 0 2px 4px 0 #0D0D0D;
+
+            }
+
+            .readArt {
+
+                background-color: whitesmoke;
+                top: 85%;
+                left: 41%;
+                position: absolute;
+
+            }
+
+            .artPage {
+
+                top: 85%;
+                left: 37.5%;
+                width: 25%;
+                position: absolute;
+                background-color: white;
+                padding: 5px;
+                box-shadow: 0 1px 2px 0 #0D0D0D;
+
+            }
+
+            .artPage:hover {
+
+                background-color: thistle;
+                box-shadow: 0 2px 4px 0 #0D0D0D;
+
+            }
+
+             /* Section is for the Scroll Bar */
+             ::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: transparent;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: whitesmoke;
+            }
+
+            ::-webkit-scrollbar-thumb:hover{
+                background: thistle;
             }
 
            
@@ -115,6 +222,35 @@ Nov 2021
 
     </div>
 
+    <div id="articles">
+        
+        <!---->
+        <!-- This is where the article codes go -->
+        <!---->
+
+        <article class="artOne" id="art_1">
+            
+            <h2>High Time for Canada</h2>
+
+            <article class="insideArt">
+                
+                <p>A report I wrote in 2021 on the legalization of Marijuana in Canada.
+                    This report looks at the ethical reasoning behind the legalization,
+                    how it helps Canada financial and examines the comparison Marijuana 
+                    has to Alcohol. 
+                </p>
+
+            </article>
+            
+            <a href='ArticlePage.html' class='ArtPage' id='aArt_1' onclick=" global = 'Articles/Writing Articles/HighTimeForCanada-Report-ENG1112-F2021.pdf#toolbar=0';sv(); window.location.href = 'ArticlePage.html';">Read Article</a>
+            
+        </article>
+
+        
+
+    </div>
+
+
     <script>
 
         function openNav() {
@@ -129,6 +265,11 @@ Nov 2021
             document.getElementById('main').style.marginLeft = '0';
             document.body.style.backgroundColor = 'White';
         }
+
+        function sv() {
+            sessionStorage.setItem("articleName", global);
+        }
+
 
     </script>
 </body>
