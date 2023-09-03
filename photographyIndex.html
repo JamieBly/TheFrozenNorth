@@ -51,12 +51,14 @@ Nov 2021
                 padding-left: 16px;
                 padding-top: 0px;
                 position: absolute;
-    
+                left: 0%;
+                top: 0%;
+                height: 5%;
             }
 
             #menuButton{
                 font-family: fantasy;
-                font-size: 3vw;
+                font-size: 2vw;
                 color: whitesmoke;
                 
             }
@@ -65,6 +67,44 @@ Nov 2021
                 color: thistle;
             }
 
+            /* Photos */
+
+            #imgDogClose {
+                height:1020px;
+                width: 768px;
+                border: 5px solid #555;
+            }
+
+            #imgCovidCaps{
+                height: 1020px;
+                width: 1636.8px;
+                border: 5px solid #555;
+            }
+
+            #imgGraffiti {
+                height: 1000px;
+                width: 1500px;
+                border: 5px solid #555;
+            }
+
+            #imgLittleCreek {
+                height: 1401.75px;
+                width: 934.5px;
+                border: 5px solid #555;
+            }
+
+            #imgRobinInATree {
+                height: 921.6px;
+                width: 1224px;
+                border: 5px solid #555;
+            }
+
+            #imgRiverBridge {
+                height: 921.6px;
+                width: 1224px;
+                border: 5px solid #555;
+                
+            }
 
             body{
 
@@ -92,7 +132,7 @@ Nov 2021
     
         <!-- <h2>TheFrozenNorth</h2> -->
 
-        <span id='menuButton' onclick='openNav()'>&#9776; Photography</span>
+        <span id='menuButton' onclick='openNav()'>&#9776; Photography </span>
         
     </div>
 
@@ -106,6 +146,9 @@ Nov 2021
 
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href='index.html' id='snHome'>Home</a>
+        <a href='esportsIndex.html' id='snEsports'>Journalism</a>
+        <a href='writingIndex.html' id='snWriting'>Writing</a>
+        <a href='photographyIndex.html' id='snPhotography'>Photography</a>
         <!-- <a href='LCS.html' id='snLCS'>LCS</a>
         <a href='LEC.html' id='snLEC'>LEC</a>
         <a href='AroundTheWorld.html' id='snATW'>Around The World</a>
@@ -113,6 +156,15 @@ Nov 2021
         <a href='Predictions.html' id='snPredictions'>Predictions</a>
         <a href='Coaching.html' id='snCoaching'>Coaching</a> -->
 
+    </div>
+
+    <div>
+        <img src="photography/RiverBridge.jpg" alt="RiverBridge" id="imgRiverBridge">
+        <img src="photography/RobinInTheTree.jpg" alt="Robin in a Tree" id="imgRobinInATree">
+        <img src="photography/ArielCloseUp.jpg" alt="Dog Close Up" id="imgDogClose">
+        <img src="photography/CovidCapsulePhoto1.jpg" alt="Covid Capsule" id="imgCovidCaps">
+        <img src="photography/Graffiti.jpg" alt="Graffiti" id="imgGraffiti">
+        <img src="photography/LittleCreek-June.29.2020.jpg" alt="Little Creek June 2020" id="imgLittleCreek">
     </div>
 
     <script>
