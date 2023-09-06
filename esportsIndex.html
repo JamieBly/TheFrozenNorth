@@ -1,196 +1,7 @@
 <html>
     <head>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <style type text='css'>
-
-.sideNav{
-                height: 100%;
-                width: 0%;
-                position: fixed;
-                z-index: 1;
-                top: 0;
-                left: 0;
-                background-color:black;
-                overflow-x: hidden;
-                padding-top:60px;
-                transition: 0.5s;
-            }
-
-            .sideNav a{
-                padding:8px 8px 8px 32px;
-                text-decoration: none;
-                font-size: 1.5vw;
-                color:whitesmoke;
-                display: block;
-                transition: 0.3s;
-            }
-
-            .sideNav a:Hover{
-                color:thistle;
-                
-            }
-
-            .sideNav .closebtn{
-                position: absolute;
-                top: 0%;
-                right: 25px;
-                font-size: 3vw;
-                margin-left: 50px;
-            }
-
-
-            /* HEADER SECTION */
-
-            #header{
-                transition: margin-left 0.5s;
-                padding-left: 16px;
-                padding-top: 0px;
-                position: absolute;
-                left: 0%;
-                top: 0%;
-                height: 5%;
-            }
-
-            #imgHomeLogo {
-                width: 10%;
-                height: 10%;
-                position: absolute;
-                left: 45%;
-            }          
-
-            #menuButton{
-                font-family: fantasy;
-                font-size: 2vw;
-                color: whitesmoke;
-            }
-
-            #menuButton:hover{
-                color: thistle;
-            }
-
-
-            body{
-
-                background-image: linear-gradient(rgba(11, 22, 184, 0.5),rgba(255, 255, 255, 0.5)), url("images/homePageBackground.jpg");
-
-                background-repeat: no-repeat;
-                background-size: cover;
-               
-            }
-
-            #articles{
-                left: 5%;
-                top: 15%;
-                /* background-color: thistle; */
-                height: 80%;
-                width: 90%;
-                position: absolute;
-                
-                overflow-y: scroll;
-                
-            }
-
-            h2 {
-                position: relative;
-                white-space: nowrap;
-                overflow: hidden;
-                /* width: 5%; */
-                width: 90%;
-                left: 5%;
-                text-overflow: ellipsis;
-            }
-
-            .artOne {
-                
-                height: 45%;
-                width: 30%;
-
-                margin-top: 2%;
-                margin-left: 2.35%;
-                          
-                background-color: whitesmoke;
-                font: 1vw 'Fira Sans', sans-serif;
-                position: relative;
-                text-align: center;
-                display:inline-block;
-
-                border-radius: 15px;
-                padding: 5s;
-                box-shadow: 0 4px 8px 0 #0D0D0D;
-                font-size: 1.2vw;
-
-            }
-
-
-            .insideArt {
-
-                height: 60%;
-                width: 90%;
-                top: 20%;
-                left: 5%;
-                border-radius: 15px;
-                background-color: white;
-                overflow-y: scroll;
-                white-space: normal;
-                position: absolute;
-                box-shadow: 0 2px 4px 0 #0D0D0D;
-
-            }
-
-            .readArt {
-
-                background-color: whitesmoke;
-                top: 85%;
-                left: 41%;
-                position: absolute;
-
-            }
-
-            .artPage {
-
-                top: 85%;
-                left: 37.5%;
-                width: 25%;
-                position: absolute;
-                background-color: white;
-                padding: 5px;
-                box-shadow: 0 1px 2px 0 #0D0D0D;
-
-            }
-
-            .artPage:hover {
-
-                background-color: thistle;
-                box-shadow: 0 2px 4px 0 #0D0D0D;
-
-            }
-
-
-            /* Section is for the Scroll Bar */
-            ::-webkit-scrollbar {
-                width: 10px;
-            }
-
-            ::-webkit-scrollbar-track {
-                background: transparent;
-            }
-
-            ::-webkit-scrollbar-thumb {
-                background: whitesmoke;
-            }
-
-            ::-webkit-scrollbar-thumb:hover{
-                background: thistle;
-            }
-
-
-           
-
-            @media screen and (max-height: 450px){
-                .sideNav{padding-top:15px;}
-                .sidenav a {font-size:1vw;}
-            }
-
+        <link rel="stylesheet" href="subIndex.css">
         </style>
     </head>
 
@@ -199,7 +10,7 @@
     <body>
     <div id='header'>
 
-        <span id='menuButton' onclick='openNav()'>&#9776;Journalism</span>
+        <span id='menuButton' onclick='openNav()'>&#9776; Journalism</span>
         <a href="home.html" id="homeLogo">
             <img src="images/logos/whiteLogo.png" id="imgHomeLogo">
         </a>
@@ -210,6 +21,7 @@
 
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href='index.html' id='snHome'>Home</a>
+        <a href="aboutPage.html" id="snAbout">About</a>
         <a href='esportsIndex.html' id='snEsports'>Journalism</a>
         <a href='writingIndex.html' id='snWriting'>Writing</a>
         <a href='photographyIndex.html' id='snPhotography'>Photography</a>
@@ -252,30 +64,6 @@
 
     </div>
 
-    <script>
-
-        var global;
-
-        function openNav() {
-            document.getElementById('mySideNav').style.width = '15%';
-            document.getElementById('main').style.marginLeft = '15%';
-            document.body.style.backgroundColor = 'rgba(0,0,0,0.4)';
-        }
-
-
-        function closeNav() {
-            document.getElementById('mySideNav').style.width = '0';
-            document.getElementById('main').style.marginLeft = '0';
-            document.body.style.backgroundColor = 'White';
-        }
-
-        function sv() {
-            sessionStorage.setItem("articleName", global);
-        }
-
-       
-
-
-    </script>
+    <script src="tfnScript.js"></script>
 </body>
 </html>

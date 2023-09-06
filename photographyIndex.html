@@ -6,155 +6,7 @@ Nov 2021
 <html>
     <head>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <style type text='css'>
-
-            .sideNav{
-                height: 100%;
-                width: 0%;
-                position: fixed;
-                z-index: 1;
-                top: 0;
-                left: 0;
-                background-color:black;
-                overflow-x: hidden;
-                padding-top:60px;
-                transition: 0.5s;
-            }
-
-            .sideNav a{
-                padding:8px 8px 8px 32px;
-                text-decoration: none;
-                font-size: 1.5vw;
-                color:whitesmoke;
-                display: block;
-                transition: 0.3s;
-            }
-
-            .sideNav a:Hover{
-                color:thistle;
-                
-            }
-
-            .sideNav .closebtn{
-                position: absolute;
-                top: 0%;
-                right: 25px;
-                font-size: 3vw;
-                margin-left: 50px;
-            }
-
-
-            /* HEADER SECTION */
-
-            #header{
-                transition: margin-left 0.5s;
-                padding-left: 16px;
-                padding-top: 0px;
-                position: absolute;
-                left: 0%;
-                top: 0%;
-                height: 5%;
-            }
-
-            #menuButton{
-                font-family: fantasy;
-                font-size: 2vw;
-                color: whitesmoke;
-                
-            }
-
-            #menuButton:hover{
-                color: thistle;
-            }
-
-            /* Photos */
-
-            #imgDogClose {
-                height: 78%;
-                width: 31%;
-                border: 5px solid #555;
-                object-fit: contain;
-            }
-
-            #imgCovidCaps{
-                height: 78%;
-                width: 62%;
-                border: 5px solid #555;
-                object-fit: contain;
-            }
-
-            #imgGraffiti {
-                height: 85%;
-                width: 66%;
-                border: 5px solid #555;
-                object-fit: contain;
-            }
-
-            #imgLittleCreek {
-                height: 85%;
-                width: 29.4%;
-                border: 5px solid #555;
-                object-fit: contain;
-            }
-
-            #imgRobinInATree {
-                height: 70.55%;
-                width: 48%;
-                object-fit: contain;
-                border: 5px solid #555;
-            }
-
-            #imgRiverBridge {
-                height: 70.55%;
-                width: 48%;
-                border: 5px solid #555;
-                object-fit: contain;
-                
-            }
-            
-            #imgRobinInATree:hover {
-                border: 5px solid #ffffff;
-            }
-
-            #imgRiverBridge:hover {
-                border: 5px solid #ffffff;
-            }
-
-            #imgLittleCreek:hover {
-                border: 5px solid #ffffff;
-            }
-
-            #imgGraffiti:hover {
-                border: 5px solid #ffffff;
-            }
-
-            #imgDogClose:hover {
-                border: 5px solid #ffffff;
-            }
-
-            #imgCovidCaps:hover {
-                border: 5px solid #ffffff;
-            }
-
-            
-
-            body{
-
-                position: relative;
-                background-image: linear-gradient(rgba(11, 22, 184, 0.5),rgba(255, 255, 255, 0.5)), url("images/homePageBackground.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
-                
-            }
-
-           
-
-            @media screen and (max-height: 450px){
-                .sideNav{padding-top:15px;}
-                .sidenav a {font-size:1vw;}
-            }
-
-        </style>
+       <link rel="stylesheet" href="subIndex.css">
     </head>
 
     <title>TheFrozenNorth</title>
@@ -178,6 +30,7 @@ Nov 2021
 
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href='index.html' id='snHome'>Home</a>
+        <a href="aboutPage.html" id="snAbout">About</a>
         <a href='esportsIndex.html' id='snEsports'>Journalism</a>
         <a href='writingIndex.html' id='snWriting'>Writing</a>
         <a href='photographyIndex.html' id='snPhotography'>Photography</a>
@@ -193,22 +46,7 @@ Nov 2021
         <img src="photography/LittleCreek-June.29.2020.jpg" alt="Little Creek June 2020" id="imgLittleCreek">
     </div>
 
-    <script>
-
-        function openNav() {
-            document.getElementById('mySideNav').style.width = '15%';
-            document.getElementById('main').style.marginLeft = '15%';
-            document.body.style.backgroundColor = 'rgba(0,0,0,0.4)';
-        }
-
-
-        function closeNav() {
-            document.getElementById('mySideNav').style.width = '0';
-            document.getElementById('main').style.marginLeft = '0';
-            document.body.style.backgroundColor = 'White';
-        }
-
-    </script>
+    <script src="tfnScript.js"></script>
 </body>
 </html>
 

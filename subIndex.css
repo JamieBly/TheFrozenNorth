@@ -1,0 +1,255 @@
+
+.sideNav{
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:black;
+    overflow-x: hidden;
+    padding-top:60px;
+    transition: 0.5s;
+}
+
+.sideNav a{
+    padding:8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.5vw;
+    color:whitesmoke;
+    display: block;
+    transition: 0.3s;
+}
+
+.sideNav a:Hover{
+    color:thistle;
+    
+}
+
+.sideNav .closebtn{
+    position: absolute;
+    top: 0%;
+    right: 25px;
+    font-size: 3vw;
+    margin-left: 50px;
+}
+
+
+/* HEADER SECTION */
+
+#header{
+    transition: margin-left 0.5s;
+    padding-left: 16px;
+    padding-top: 0px;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 5%;
+}
+
+#imgHomeLogo {
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    left: 45%;
+}          
+
+#menuButton{
+    font-family: fantasy;
+    font-size: 2vw;
+    color: whitesmoke;
+}
+
+#menuButton:hover{
+    color: thistle;
+}
+
+
+body{
+
+    background-image: linear-gradient(rgba(11, 22, 184, 0.5),rgba(255, 255, 255, 0.5)), url("images/homePageBackground.jpg");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+#articles{
+    left: 5%;
+    top: 15%;
+    /* background-color: thistle; */
+    height: 80%;
+    width: 90%;
+    position: absolute;
+    
+    overflow-y: scroll;
+    
+}
+
+h2 {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    /* width: 5%; */
+    width: 90%;
+    left: 5%;
+    text-overflow: ellipsis;
+}
+
+.artOne {
+    
+    height: 45%;
+    width: 30%;
+
+    margin-top: 2%;
+    margin-left: 2.35%;
+              
+    background-color: whitesmoke;
+    font: 1vw 'Fira Sans', sans-serif;
+    position: relative;
+    text-align: center;
+    display:inline-block;
+
+    border-radius: 15px;
+    padding: 5s;
+    box-shadow: 0 4px 8px 0 #0D0D0D;
+    font-size: 1.2vw;
+
+}
+
+
+.insideArt {
+
+    height: 60%;
+    width: 90%;
+    top: 20%;
+    left: 5%;
+    border-radius: 15px;
+    background-color: white;
+    overflow-y: scroll;
+    white-space: normal;
+    position: absolute;
+    box-shadow: 0 2px 4px 0 #0D0D0D;
+
+}
+
+.readArt {
+
+    background-color: whitesmoke;
+    top: 85%;
+    left: 41%;
+    position: absolute;
+
+}
+
+.artPage {
+
+    top: 85%;
+    left: 37.5%;
+    width: 25%;
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    box-shadow: 0 1px 2px 0 #0D0D0D;
+
+}
+
+.artPage:hover {
+
+    background-color: thistle;
+    box-shadow: 0 2px 4px 0 #0D0D0D;
+
+}
+
+
+/* Section is for the Scroll Bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: whitesmoke;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: thistle;
+}
+
+/* Photos */
+
+#imgDogClose {
+    height: 78%;
+    width: 31%;
+    border: 5px solid #555;
+    object-fit: contain;
+}
+
+#imgCovidCaps{
+    height: 78%;
+    width: 62%;
+    border: 5px solid #555;
+    object-fit: contain;
+}
+
+#imgGraffiti {
+    height: 85%;
+    width: 66%;
+    border: 5px solid #555;
+    object-fit: contain;
+}
+
+#imgLittleCreek {
+    height: 85%;
+    width: 29.4%;
+    border: 5px solid #555;
+    object-fit: contain;
+}
+
+#imgRobinInATree {
+    height: 70.55%;
+    width: 48%;
+    object-fit: contain;
+    border: 5px solid #555;
+}
+
+#imgRiverBridge {
+    height: 70.55%;
+    width: 48%;
+    border: 5px solid #555;
+    object-fit: contain;
+    
+}
+
+#imgRobinInATree:hover {
+    border: 5px solid #ffffff;
+}
+
+#imgRiverBridge:hover {
+    border: 5px solid #ffffff;
+}
+
+#imgLittleCreek:hover {
+    border: 5px solid #ffffff;
+}
+
+#imgGraffiti:hover {
+    border: 5px solid #ffffff;
+}
+
+#imgDogClose:hover {
+    border: 5px solid #ffffff;
+}
+
+#imgCovidCaps:hover {
+    border: 5px solid #ffffff;
+}
+
+
+@media screen and (max-height: 450px){
+    .sideNav{padding-top:15px;}
+    .sidenav a {font-size:1vw;}
+}

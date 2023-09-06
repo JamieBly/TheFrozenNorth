@@ -1,0 +1,113 @@
+.sideNav{
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:black;
+    overflow-x: hidden;
+    padding-top:60px;
+    transition: 0.5s;
+}
+
+.sideNav a{
+    padding:8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.5vw;
+    color:whitesmoke;
+    display: block;
+    transition: 0.3s;
+}
+
+.sideNav a:Hover{
+    color:thistle;
+    
+}
+
+.sideNav .closebtn{
+    position: absolute;
+    top: 0%;
+    right: 25px;
+    font-size: 3vw;
+    margin-left: 50px;
+}
+
+#descriptionIndex {
+    font: fantasy;
+    font-size: 2vw;
+    color: white;
+    padding: 5%;
+    text-align: center;
+
+}
+
+.text-highlight, .iText {
+    position: relative;
+}
+
+.text-highlight{
+    display: inline-block;
+    
+}
+
+.text-highlight:before{
+    content:"";
+    display: block;
+    height: 90%;
+    width: 100%;
+    margin-left: -3px;
+    margin-right: -3px;
+    position: absolute;
+    background: rgb(79, 55, 168);
+    top: -1px;
+    left: -1px;
+    border-radius: 5% 5% 5% 5%;
+    padding: 10px 3px 3px 10px;
+}
+
+.text-highlight:hover{
+    visibility: visible ;
+}
+
+
+/* HEADER SECTION */
+
+#header{
+    transition: margin-left 0.5s;
+    padding-left: 16px;
+    padding-top: 0px;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 5%;
+
+}
+
+#menuButton{
+    font-family: fantasy;
+    font-size: 2vw;
+    color: whitesmoke;
+    
+}
+
+#menuButton:hover{
+    color: thistle;
+}
+
+
+body{
+
+    position: relative;
+    background-image: linear-gradient(rgba(11, 22, 184, 0.5),rgba(255, 255, 255, 0.5)), url("images/homePageBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+
+@media screen and (max-height: 450px){
+    .sideNav{padding-top:15px;}
+    .sidenav a {font-size:18px;}
+}
